@@ -31,6 +31,13 @@ export function Hero() {
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/res/cv.pdf";
+    link.download = "cv.pdf";
+    link.click();
+  };
+
   return (
     <section
       id="home"
@@ -116,6 +123,7 @@ export function Hero() {
             <Button
               size="lg"
               variant="outline"
+              onClick={handleDownload}
               className="group text-base px-8 py-6 border-2 
              hover:border-blue-500 
              hover:bg-blue-50 
