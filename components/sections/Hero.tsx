@@ -85,7 +85,7 @@ export function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="group text-base px-8 py-6 border-2 hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950 transition-all hover:scale-105"
+              className="group text-base px-8 py-6 border-2 hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950 transition-colors"
             >
               <Download className="mr-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
               Download CV

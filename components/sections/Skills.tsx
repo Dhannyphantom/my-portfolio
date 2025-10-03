@@ -3,36 +3,43 @@
 import { useEffect, useRef, useState } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import { Code, Server, Wrench, Palette } from 'lucide-react';
+import { Smartphone, Globe, Server, Wrench, Palette } from 'lucide-react';
 
 const skillCategories = [
   {
-    title: 'Frontend Development',
-    icon: Code,
+    title: 'Mobile App Development',
+    icon: Smartphone,
     color: 'text-blue-600 dark:text-blue-400',
     bgColor: 'bg-blue-100 dark:bg-blue-900/30',
-    skills: ['React Native', 'React', 'Redux', 'Tailwind CSS', 'Framer Motion', 'Next.js 15']
+    skills: ['React Native', 'Expo', 'Redux', 'React Navigation', 'EAS Build', 'Mobile UI/UX']
+  },
+  {
+    title: 'Web Development',
+    icon: Globe,
+    color: 'text-cyan-600 dark:text-cyan-400',
+    bgColor: 'bg-cyan-100 dark:bg-cyan-900/30',
+    skills: ['Next.js 15', 'React', 'TypeScript', 'Tailwind CSS', 'Responsive Design', 'Framer Motion']
   },
   {
     title: 'Backend Development',
     icon: Server,
     color: 'text-green-600 dark:text-green-400',
     bgColor: 'bg-green-100 dark:bg-green-900/30',
-    skills: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'NextAuth.js']
+    skills: ['Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'REST APIs', 'NextAuth.js']
   },
   {
     title: 'Tools & Platforms',
     icon: Wrench,
     color: 'text-orange-600 dark:text-orange-400',
     bgColor: 'bg-orange-100 dark:bg-orange-900/30',
-    skills: ['Yarn', 'Expo', 'EAS Build', 'Cloudinary', 'Render', 'Paystack API', 'Git', 'GitHub']
+    skills: ['Git & GitHub', 'Yarn', 'Cloudinary', 'Render', 'Paystack API', 'Vercel']
   },
   {
     title: 'UI/UX Design',
     icon: Palette,
     color: 'text-pink-600 dark:text-pink-400',
     bgColor: 'bg-pink-100 dark:bg-pink-900/30',
-    skills: ['Adobe XD', 'Intuitive Design', 'User-Friendly Interfaces', 'Modern Aesthetics']
+    skills: ['Adobe XD', 'Figma', 'Intuitive Design', 'User-Friendly Interfaces', 'Modern Aesthetics']
   }
 ];
 
@@ -75,7 +82,8 @@ export function Skills() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-600 mx-auto rounded-full" />
             <p className="mt-6 text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-              A comprehensive toolkit for building modern, scalable applications
+              <span className="font-semibold text-blue-600 dark:text-blue-400">Mobile App Developer</span> and{' '}
+              <span className="font-semibold text-cyan-600 dark:text-cyan-400">Web Developer</span> with expertise across the full development stack
             </p>
           </div>
 
